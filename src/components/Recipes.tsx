@@ -15,7 +15,7 @@ export default function Recipes({ categories, meals }: any) {
             paddingHorizontal: 10,
             marginTop: 10
         }}>
-            <Text style={{ fontSize: hp(3), fontFamily: FONTS.POPPINS_SEMIBOLD }}>Recipes</Text>
+            <Text style={{ fontSize: hp(3), fontFamily: FONTS.POPPINS_SEMIBOLD, color: '#232324' }}>Recipes</Text>
 
             <View>
                 {

@@ -71,13 +71,13 @@ export default function HomeScreen() {
           marginVertical: 5,
           marginTop: 20
         }}>
-          <Text style={{ fontFamily: FONTS.POPPINS_SEMIBOLD, fontSize: hp(2.2)}}>Hello, Otitoju</Text>
+          <Text style={{ fontFamily: FONTS.POPPINS_SEMIBOLD, fontSize: hp(2.2), color: '#9b9c9e'}}>Hello, Otitoju!</Text>
 
           <View>
-            <Text style={{ fontSize: hp(4.0), fontFamily: FONTS.POPPINS_BOLD}}>Make your own food, </Text>
+            <Text style={{ fontSize: hp(4.0), fontFamily: FONTS.POPPINS_BOLD, color: '#232324'}}>Make your own food, </Text>
           </View>
 
-          <Text style={{ fontSize: hp(4.0), fontFamily: FONTS.POPPINS_BOLD}}>Stay at <Text style={{color: '#FFC107'}}>home</Text></Text>
+          <Text style={{ fontSize: hp(4.0), fontFamily: FONTS.POPPINS_BOLD, color: '#232324'}}>Stay at <Text style={{color: '#FFC107'}}>home</Text></Text>
         </View>
 
         <View style={{

@@ -11,7 +11,7 @@ import YoutubeIframe from 'react-native-youtube-iframe';
 import Animated from 'react-native-reanimated';
 
 
-const RecipeDetailScreen: React.FC<any> = ({ props }) => {
+const RecipeDetailScreen = (props: any) => {
     const item = props.route.params;
 
     const [isFavorite, setIsFavorite] = useState(false);
@@ -77,14 +77,14 @@ const RecipeDetailScreen: React.FC<any> = ({ props }) => {
             }}>
                 <Animated.Image
                     source={{ uri: item.strMealThumb }}
-                //    sharedTransitionTag={item.strMeal}
+                   sharedTransitionTag={item.strMeal}
                     style={{
                         width: hp(53),
                         height: hp(50),
                         borderRadius: 23,
                         borderBottomLeftRadius: 20,
                         borderBottomRightRadius: 20,
-                        marginTop: 4
+                        // marginTop: 4
                     }}
                     
                 />
@@ -151,7 +151,8 @@ const RecipeDetailScreen: React.FC<any> = ({ props }) => {
                                 <Text style={{
                                     fontFamily: FONTS.POPPINS_REGULAR,
                                     fontSize: hp(2),
-                                    flex: 1
+                                    flex: 1,
+                                    color: '#232324'
                                 }}>{meal?.strArea}</Text>
                             </View>
 
@@ -365,7 +366,7 @@ const RecipeDetailScreen: React.FC<any> = ({ props }) => {
                                     Instructions
                                 </Text>
 
-                                <Text style={{ fontFamily: FONTS.POPPINS_REGULAR, fontSize: hp(1.6) }}>
+                                <Text style={{ fontFamily: FONTS.POPPINS_REGULAR, fontSize: hp(1.6), color: 'gray' }}>
                                     {
                                         meal?.strInstructions
                                     }
